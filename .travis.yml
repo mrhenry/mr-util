@@ -2,3 +2,11 @@ language: node_js
 node_js:
 - '0.12'
 - '0.11'
+deploy:
+  provider: npm
+  email: simon.menke@gmail.com
+  api_key:
+    secure: R0QOdUO661bSrJ6rZrg4UtIEcuVjKKrYNuMN/L74A9u2W4L0kvDeLaZZVou8/suq/A4DybgGBUlsf8PXABEb1naSQ7XPmQpiPK29xYEWherPEkmMlX0sahH8sMZwJ/uESQ06nknbIdlaSoUxXvWW349YLhr68/dzPF1zP5ehI+aq0hfaWcm01RpRDfEmjRWOcduAi7D+ZXbmjpZBDCv4UtFM+FqBNFnYUba8z3O05vyijByA7hT2W/zpYiB5lNz+u5lR4n0cXqdDFp5hu7Ke1FeblK11Y8HbLjnARKKSQhUMAhcIg5O9BYa+XEfPa75aYP8IlblLM0qJEh0dH3lwL8HmFIOQPN62dlqczhjcG4rPcme9X/K6siYe+5tFHWK4lEg2HBip3JGC/EVduhKGWIZUrHIk5P9sjnhaqi2YB2ZlULrR5OqVJ2G1erMrJQRzRvgTgilgt38Aff5TLqMamFGKCuHMR6gqcV/F91+xQa6HqKaRVwczUXLCt27zXbuymoemiUslWWVc3ql5EFfQNyePKqk4IdXn77BQpULnXJ0Pfjbcppl/YXH05OwuEKcu0J1GoEiHpk9i2k2D+NjwrKskNRTMOrC3Ozb5acAg7oA91HGScjUqMaVWh6Om3YUxEeLw7NeoHJrWci/oz1KwpJDTU0c0x6gUufobQE0xpu8=
+  on:
+    tags: true
+    repo: mrhenry/mr-util
