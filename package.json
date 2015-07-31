@@ -1,0 +1,28 @@
+{
+  "name": "mr-util",
+  "version": "0.0.0",
+  "description": "Mr. Henry Utilities",
+  "repository": "https://github.com/mrhenry/mr-util.git",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha test",
+    "build": "make"
+  },
+  "keywords": [],
+  "author": "Simon Menke",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "babel-eslint": "^4.0.5",
+    "browserify": "^10.2.3",
+    "eslint": "^0.24.1",
+    "exorcist": "^0.4.0",
+    "mocha": "^2.2.5",
+    "unit.js": "^2.0.0"
+  },
+  "dependencies": {},
+  "jspm": {
+    "format": "es6",
+    "main": "src/index.js"
+  }
+}
