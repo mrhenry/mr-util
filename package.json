@@ -6,6 +6,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha test",
+    "deploy-doc": "make deploy",
     "build": "make"
   },
   "keywords": [],
@@ -17,6 +18,7 @@
     "browserify": "^10.2.3",
     "eslint": "^0.24.1",
     "exorcist": "^0.4.0",
+    "jsdoc": "^3.3.2",
     "mocha": "^2.2.5",
     "unit.js": "^2.0.0"
   },

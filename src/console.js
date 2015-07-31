@@ -1,4 +1,4 @@
-/* eslint-env browser, node */
+/* eslint-env es6, browser, node */
 let root;
 
 if (typeof window !== 'undefined') {

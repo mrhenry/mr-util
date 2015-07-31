@@ -1,10 +1,14 @@
 SRC_FILES = $(shell find src -name '*.js')
 LIB_FILES = $(patsubst src/%.js, lib/%.js, $(SRC_FILES))
 
-all: lib dist
+all: lib dist doc
 
 clean:
 	rm -r lib dist
+
+doc: dist
+	jsdoc -r -d ./doc ./dist/*.js
+	@touch doc
 
 lib: $(SRC_FILES)
 	babel --out-dir=lib --source-maps=true --module=umdStrict --stage=0 src
@@ -17,4 +21,7 @@ dist: lib $(LIB_FILES)
 	rm dist/mr-util.raw.js
 	@touch dist
 
-.PHONEY: all clean
+deploy: doc
+	@bash ./script/deploy-docs.sh
+
+.PHONEY: all clean deploy
