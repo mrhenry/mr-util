@@ -1,6 +1,12 @@
 /* eslint-env es6, browser, node */
 let root;
 
+/**
+A no-op fallback for window.console.
+
+@member console
+*/
+
 if (typeof window !== 'undefined') {
 	root = window;
 } else if (typeof global !== 'undefined') {

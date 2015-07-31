@@ -2,9 +2,12 @@
 /**
 Safe url interpolation.
 
-@example
-let safeUrl = url`/hello/${who}`;
+@function url
 
+@example
+let who = "Simon Menke";
+let safeUrl = url`/hello/${who}`;
+// => safeUrl === '/hello/Simon%20Menke'
 */
 export function url(tmpl, ...args) {
 	let len = tmpl.length - 1;
