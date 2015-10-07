@@ -40,7 +40,7 @@ var noop = function() {};
 for (let idx in methods) {
 	let m = methods[idx];
 	if (typeof native[m] === 'function') {
-		Console.prototype[m] = native[m].bind(native[m]);
+		Console.prototype[m] = native[m].bind(native);
 	} else {
 		Console.prototype[m] = noop;
 		native[m] = noop;
