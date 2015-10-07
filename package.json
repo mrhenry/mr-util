@@ -1,6 +1,6 @@
 {
   "name": "mr-util",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Mr. Henry Utilities",
   "repository": "https://github.com/mrhenry/mr-util.git",
   "main": "lib/index.js",
