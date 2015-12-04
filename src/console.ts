@@ -1,11 +1,6 @@
-/* eslint-env es6, browser, node */
+/// <reference path="./global"/>
+
 let root;
-
-/**
-A no-op fallback for window.console.
-
-@member console
-*/
 
 if (typeof window !== 'undefined') {
 	root = window;
@@ -19,9 +14,27 @@ if (!native) {
 	root.console = native;
 }
 
-export var console;
+
+/**
+A no-op fallback for window.console.
+*/
+export var console : Console;
 
 export class Console {
+
+	clear() : void {}
+
+	log(fmt : string, ...args:Array<any>) : void;
+	log(...args:Array<any>) : void {}
+	debug(fmt : string, ...args:Array<any>) : void;
+	debug(...args:Array<any>) : void {}
+	info(fmt : string, ...args:Array<any>) : void;
+	info(...args:Array<any>) : void {}
+	warn(fmt : string, ...args:Array<any>) : void;
+	warn(...args:Array<any>) : void {}
+	error(fmt : string, ...args:Array<any>) : void;
+	error(...args:Array<any>) : void {}
+
 }
 
 var methods = [

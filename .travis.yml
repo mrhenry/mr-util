@@ -1,10 +1,10 @@
 language: node_js
 node_js:
-- '0.12'
+- '4.1'
 script: |
-  npm run-script build
+  npm run prepublish
   npm test
-  npm run-script deploy-doc
+  npm run deploy-doc
 env:
   global:
   - secure: f9Do4q63sgjoR9Iel06UNyJeyGJyjVatwrxSztuq7an4+XWMXoPd/pztv7B7TvzpfNN2pXLDRGDCJiXU2Ij7ORcJa6FbXPrFU3olY1DVxDcnCMQ1MSIX3REQBEwG+T3K2Z2CxB99egS+EwDLSUs5r10MVXfm1HhSJwRtNlG3XNxH/0mACIU1bq9uERzGyrb/192oACWY0draKDeh2T1W9NOLRhYHpf460EqkJGMI2q8xy5BfDvPZxnc3nrAq2xsyjg7mNr44HOoQEejLLtUoDkeapyz5ZYNvYNRYAXs/IeFxoUnhukckM7dDtD0gzAR6Au7PXMnoJqi9dzCumDxq4XetMuU2bbNXQjPh0EtPzMDAmdLeodHbQHJLtNnWmcVxV5J/CvOJmOyEn+S/a3GMyjISxY9X2f7c9Oo81+pYnAQxIGCpOcrGlpkCwRuRqJLIfxT9WqnzK2g5SgvgTLUG3fX+q80MpurUeT5W5dSKDk8Y6bTaXItGm6GNxE/azTUoqRcLUOCtK7AC2YbeIUPV+9p5OGHJGasHd2H18csJjDgcrgLY+mUpXUEt9GA7q9MdU8x4nvOaPo/HRLGunMvFXZJwvatgd+deAig9S7/qqbgUrU3t+q6ZdPK8RMVaK+l2zZwGAD7nKXqFDECEwbGqiTWAGe6kNRMHJI9LMu4L2ac=
