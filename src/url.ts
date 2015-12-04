@@ -8,7 +8,7 @@ let safeUrl = url`/hello/${who}`;
 // => safeUrl === '/hello/Simon%20Menke'
 ```
 */
-export function url(tmpl:string, ...args:Array<any>) : string {
+export function url(tmpl:Array<string>, ...args:Array<any>) : string {
 	let len = tmpl.length - 1;
 	let u = tmpl[0];
 
