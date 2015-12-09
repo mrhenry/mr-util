@@ -4,6 +4,7 @@
         "declaration": true,
         "outDir": "lib/",
         "sourceMap": true,
+        "inlineSources": true,
         "removeComments": true,
         "listFiles": true,
         "newLine": "LF",
